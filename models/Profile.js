@@ -31,7 +31,6 @@ const ProfileSchema = new Schema({
   },
   bio: {
     type: String,
-    required: true
   },
   githubusername: {
     type: String
@@ -110,10 +109,10 @@ const ProfileSchema = new Schema({
     instagram: {
       type: String
     },
-    date: {
-      type: Date,
-      default: Date.now
-    }
+  },
+  date: {
+    type: Date,
+    default: Date.now
   }
 });
 
